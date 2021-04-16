@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .child{
+            border: 2px solid green;
+            margin: 3px;
+            grid-area: a1;
+        }
+        .child:nth-child(2){
+            border: 2px solid green;
+            margin: 3px;
+            grid-area: a2;
+        }
+        .child:nth-child(3){
+            border: 2px solid green;
+            margin: 3px;
+            grid-area: a3;
+        }
+        .child:nth-child(4){
+            border: 2px solid green;
+            margin: 3px;
+            grid-area: a4;
+        }
+        .child:nth-child(5){
+            border: 2px solid green;
+            margin: 3px;
+            grid-area: a5;
+        }
+        .child:nth-child(6){
+            border: 2px solid green;
+            margin: 3px;
+            grid-area: a6;
+        }
+        .parent{
+            display: grid;
+            margin: auto;
+            width: 1000px;
+            height: 400px;
+            grid-template: "a1 a2 a2 a2 a3"
+                           "a1 a4 a5 a6 a3"
+                           "a1 a4 a5 a6 a3";
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="child"></div>
+        <div class="child"></div>
+        <div class="child"></div>
+        <div class="child"></div>
+        <div class="child"></div>
+        <div class="child"></div>
+    </div>
+</body>
+</html>

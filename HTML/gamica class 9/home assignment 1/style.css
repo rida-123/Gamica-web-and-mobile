@@ -1,0 +1,23 @@
+.parent{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.child:nth-child(2){
+  text-align: right;
+}
+.navbar-nav .nav-item .nav-link {
+    color: white !important;
+   font-weight: bold;
+  margin-left: 30px;
+}
+.navbar-nav{
+    margin-left: 80px;
+}
+.navbar-nav .nav-item .nav-link:hover{
+    background-color: #6EB5D1;
+  
+ 
+}
+
+

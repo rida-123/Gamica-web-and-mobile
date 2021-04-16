@@ -1,0 +1,69 @@
+.text{
+    position: absolute;
+    left: 148px;
+    top: 175px;
+}
+.para{
+    font-weight: bold;
+}
+.heading{
+    font-size: 50px;
+    font-weight: bold;
+}
+.btn1{
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+    width: 150px;
+}
+.btn1:hover{
+    background-color: black;
+    color: white;
+}
+button{
+    border: none;
+    width: 200px;
+    padding: 10px;
+}
+.head1{
+    font-size: 70px;
+    color: #F8C667;
+}
+.head2{
+    font-size: 70px;
+    color: #F8C667;
+}
+.head3{
+    font-size: 70px;
+    color: #F8C667;
+}
+.head4{
+    font-size: 70px;
+    color: #F8C667;
+}
+.paragr{
+    position: absolute;
+    top: 30px;
+ 
+    left: 40px;
+}
+@media screen and (max-width: 500px){
+    .text{
+        display: none;
+    }
+   .head1{
+       margin-left: 180px;
+   }
+   .head2{
+    margin-left: 180px;
+}
+.head3{
+    margin-left: 180px;
+}
+.head4{
+    margin-left: 180px;
+}
+.paragr{
+    margin-left: 180px;
+}
+}

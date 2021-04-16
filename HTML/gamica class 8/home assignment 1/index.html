@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>landing page</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <style>
+      body{
+          background-color: black;
+      }
+      #parent{
+          margin: 33px;
+      }
+    .navbar-brand{
+         
+          font-weight: bold;
+          font-size:30px;
+          color:white ;        
+      }
+      .navbar-brand:hover{
+          color: #D83A53;
+      }
+      .navbar-nav .nav-item 
+     {
+          padding: 20px;
+       
+      }
+      .navbar-nav .nav-item .nav-link{
+       color: white;
+       font-weight: bold;
+      }
+      .navbar-nav .nav-item .nav-link:hover{
+          color: #D83A53;
+      }
+      .heading{
+        font-weight: bold;
+        font-size: 48px;
+        color: white;
+        font-family: 'Dela Gothic One', cursive;
+        
+      }
+     .btn{
+       background-color: transparent;
+       color: white;
+       border: 2px solid #D83A53;
+       padding: 10px 20px 10px 20px;
+       font-weight: bold;
+       transform: scale(1);
+       
+
+     }
+   .btn:hover{
+     color: white;
+     background-color: #D83A53;
+     transform: scale(1.2);
+     transition: transform 1s linear 0s;
+   }
+   .child:nth-child(1){
+     background-color: #D83A53;
+     grid-area: a1;
+     margin: 10px;
+     transform: scale(1);
+
+   }
+   .child:nth-child(2){
+     background-color: #1B1B1B;
+     grid-area: a2;
+     margin: 10px;
+     transform: scale(1);
+     
+   }
+   .child:nth-child(3){
+     background-color:#1B1B1B;
+     grid-area: a3;
+     margin: 10px;
+     transform: scale(1);
+ 
+  border-style: solid;
+  border-width: 15px;
+     border-image: 
+    linear-gradient(
+      to bottom, 
+      #1B1B1B, 
+      #D83A53
+    ) 1 100%;
+     
+   }
+   #cssG{
+     width: 1000px;
+     height: 300px;
+     display: grid;
+     grid-template:"a1 a2 a3";
+     margin: auto;
+     position: absolute;
+     top:650px;
+     left: 150px;
+   }
+   .child:hover{
+     transform: scale(1.1);
+     transition: transform 1s linear 0s;
+   }
+   .hr1{
+   margin: 17px;
+   }
+    </style>
+</head>
+<body><div id="parent">
+    <nav class="navbar navbar-expand-lg  ">
+        <a class="navbar-brand" href="#">Gentium.</a>
+        <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#" style="border-bottom: 3px solid #D83A53;  " >Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Services</a>
+            </li>
+           
+            <li class="nav-item">
+              <a class="nav-link " href="#">Work</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link " href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="#">Client</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="#">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="#">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href=""><i class="fas fa-search"></i></a>
+              </li>
+          </ul>
+      
+        </div>
+      </nav>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm-4"  >
+            <br><br><br>
+            <br><br>
+            <hr align="left" style= "background-color: #D83A53;" width="70px" >
+               <h1 class="heading">We're a digital agency.</h1>
+               <br><br>
+               <button class="btn">Getting Started</button>
+          </div>
+          <div class="col-sm-8">
+<img src="men.jpeg" alt="" width="100%" height="900px">
+          </div>
+    
+        </div>
+      </div>
+      <div id="cssG">
+        <div class="child">
+          <img src="Capture.PNG" alt="" style="padding-left:20px; padding-top: 20px;">
+          <br>
+          <br><br>
+          <h4 style="padding-left:20px; padding-top: 20px; color: white;">Future Vision</h4>
+          <hr  align="left"  style= "background-color: white;" width="70px" class="hr1" ;  >
+          <p  style="padding-left:20px; padding-top: 20px; color: white;">
+            Lorem ipsum dolor ut.<br>Lorem ipsum dolor sit amet cciis aut<br>um dolor sit amet cciis 
+          </p>
+        </div>
+        <div class="child">
+          <img src="Capture1.PNG" alt="" style="padding-left:20px; padding-top: 20px;">
+          <br>
+          <br><br>
+          <h4 style="padding-left:20px; padding-top: 20px; color: white;">Product design</h4>
+          <hr  align="left"  style= "background-color:#D83A53;" width="70px" class="hr1" ;  >
+          <p  style="padding-left:20px; padding-top: 20px; color: white;">
+            Lorem ipsum dolor ut.<br>Lorem ipsum dolor sit amet cciis aut<br>um dolor sit amet cciis 
+          </p>
+        </div>
+        <div class="child">
+          <img src="Capture2.PNG" alt="" style="padding-left:20px; padding-top: 20px;">
+          <br>
+          <br><br>
+          <h4 style="padding-left:20px; padding-top: 20px; color: white;">Innovative solutions</h4>
+          <hr  align="left"  style= "background-color: #D83A53" width="70px" class="hr1" ;  >
+          <p  style="padding-left:20px; padding-top: 20px; color: white;">
+            Lorem ipsum dolor ut.<br>Lorem ipsum dolor sit amet cciis aut<br>um dolor sit amet cciis 
+          </p>
+        </div>
+      </div>
+      </div>
+</body>
+</html>

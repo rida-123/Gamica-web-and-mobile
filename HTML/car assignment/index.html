@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+     .wheel{
+        position: absolute;
+    left: 60px;
+    top: 100px;
+
+     }
+     .wheel1{
+        position: absolute;
+    left: 290px;
+    top: 100px; 
+     }
+   #head{
+       position: relative;
+       top: -340px;
+   }
+   #head{
+       left: 0;
+       transition: left 3s linear 0s;
+   }
+   #head:hover{
+       left: 700px;
+   }
+
+    </style>
+</head>
+<body>
+    <div>
+        <img src="myroad.jpg" alt="" width="100%">
+    </div>
+    <div id="head">
+        <img src="my-car.png" alt="" id="car" width="400px" height="200px">
+        <img src="wheel.png" alt="" height="70px" class="wheel">
+        <img src="wheel.png" alt="" height="70px" class="wheel1">
+    </div>
+</body>
+</html>

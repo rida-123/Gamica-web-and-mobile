@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS grid</title>
+    <style>
+        .child:nth-child(1) {
+            background-color: orange;
+            grid-area: a1;
+            border: 2px solid black;
+            margin: 2px;
+
+        }
+
+        .child:nth-child(2) {
+            background-color: yellow;
+            grid-area: a2;
+            border: 2px solid black;
+            margin: 2px;
+        }
+
+        .child:nth-child(3) {
+            background-color: green;
+            grid-area: a3;
+            border: 2px solid black;
+            margin: 2px;
+
+        }
+
+        .child:nth-child(4) {
+            background-color: red;
+            grid-area: a4;
+            border: 2px solid black;
+            margin: 2px;
+
+        }
+
+        .child:nth-child(5) {
+            background-color: purple;
+            grid-area: a5;
+            border: 2px solid black;
+            margin: 2px;
+        }
+
+        #parent {
+            display: grid;
+            width: 500px;
+            height: 400px;
+            grid-template-columns: 3;
+            grid-template-rows: 3;
+
+            grid-template-areas: "a1 a2 a3"
+                "a1 a4 a3"
+                "a5 a5 a5";
+
+
+
+        }
+
+        .item:nth-child(1) {
+            background-color: blue;
+            grid-area: b1;
+            border: 2px solid black;
+            margin: 2px;
+
+        }
+
+        .item:nth-child(2) {
+            background-color: khaki;
+            grid-area: b2;
+            border: 2px solid black;
+            margin: 2px;
+        }
+
+        .item:nth-child(3) {
+            background-color: plum;
+            grid-area: b3;
+            border: 2px solid black;
+            margin: 2px;
+
+        }
+
+        .item:nth-child(4) {
+            background-color: salmon;
+            grid-area: b4;
+            border: 2px solid black;
+            margin: 2px;
+
+        }
+
+        .item:nth-child(5) {
+            background-color: firebrick;
+            grid-area: b5;
+            border: 2px solid black;
+            margin: 2px;
+        }
+
+        .item:nth-child(6) {
+            background-color: darkcyan;
+            grid-area: b6;
+            border: 2px solid black;
+            margin: 2px;
+        }
+
+        #parent1 {
+            display: grid;
+            position: relative;
+            left: 97px;
+            width: 500px;
+            height: 400px;
+            grid-template-columns: 3;
+            grid-template-rows: 4;
+
+            grid-template-areas: "b1 b1 b1 b1"
+                "b2 b3 b4 b4"
+                "b2 b3 b4 b4"
+                "b5 b5 b6 b6"
+
+            ;
+        }
+
+        .header {
+            display: flex;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <div id="parent">
+            <div class="child">A</div>
+            <div class="child">B</div>
+            <div class="child">C</div>
+            <div class="child">D</div>
+            <div class="child">E</div>
+        </div>
+
+        <div id="parent1">
+            <div class="item">A</div>
+            <div class="item">B</div>
+            <div class="item">C</div>
+            <div class="item">D</div>
+            <div class="item">E</div>
+            <div class="item">F</div>
+        </div>
+    </div>
+</body>
+
+</html>
