@@ -29,5 +29,14 @@
 html{
     overflow-x: hidden;
 }
+.card-body{
+    background-color: #6EB5D1;
+}
+.card-title{
+    color: white;
+}
+.card-text{
+    color: white;
+}
 
 
