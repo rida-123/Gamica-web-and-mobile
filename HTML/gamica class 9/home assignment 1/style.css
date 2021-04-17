@@ -38,5 +38,11 @@ html{
 .card-text{
     color: white;
 }
+.btn1{
+    background-color: #6EB5D1;
+    color: white;
+    width: 150px;
+    border: none;
+}
 
 
